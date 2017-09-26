@@ -1,3 +1,4 @@
+//Zadaneie 9.1
 function getTriangleArea (a, h) {
 
 	if((a > 0)&&(h > 0)) {
