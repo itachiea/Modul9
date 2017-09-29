@@ -1,21 +1,11 @@
-function getTriangleArea (a, h) {
+var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
 
-	if((a > 0)&&(h > 0)) {
-	}
-	else {
-		console.log("Nieprawidłowe dane")
-	}
-	return a*h/2;
+var allNames = femaleNames.concat(maleNames);
+console.log(allNames);
+
+var newName = 'Marian';    //Sprawdzanie czy nowe imie jest takie samo jak któryś element tablicy
+if(allNames.indexOf(newName) === -1) {
+    allNames.push(newName);
 }
-
-//main
-
-console.log("To jest pierwszy wynik: " + getTriangleArea(6,10));
-
-var triangle1Area = getTriangleArea(10,15);
-var triangle2Area = getTriangleArea(11,16);
-var triangle3Area = getTriangleArea(12,17);
-
-console.log("Pierwsza zmienna to: " + triangle1Area);
-console.log("Druga zmienna to: " + triangle2Area);
-console.log("Trzecia zmienna to: " + triangle3Area);
+console.log(allNames);
