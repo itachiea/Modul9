@@ -1,21 +1,14 @@
-function getTriangleArea (a, h) {
+window.onload = function() {
+	var list = document.getElementById('list');
+	var add = document.getElementById('addElem');
+	var clickCount = 0;
 
-	if((a > 0)&&(h > 0)) {
-	}
-	else {
-		console.log("Nieprawidłowe dane")
-	}
-	return a*h/2;
+	add.addEventListener('click', function() {
+		var element = document.createElement('li');
+		clickCount ++;
+		element.innerText = 'item' + " " + clickCount;
+		list.appendChild(element);
+		}
+	);
+
 }
-
-//main
-
-console.log("To jest pierwszy wynik: " + getTriangleArea(6,10));
-
-var triangle1Area = getTriangleArea(10,15);
-var triangle2Area = getTriangleArea(11,16);
-var triangle3Area = getTriangleArea(12,17);
-
-console.log("Pierwsza zmienna to: " + triangle1Area);
-console.log("Druga zmienna to: " + triangle2Area);
-console.log("Trzecia zmienna to: " + triangle3Area);
